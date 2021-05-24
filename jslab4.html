@@ -1,0 +1,52 @@
+<!----TITLE : FOR LOOP APPLICATION
+DESC : Collect the info using a web interface and provide functionality
+search user details based on 
+AUTHOR : KS SAIVAIBHAV
+DATE :21-05-2021!----->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>BANK DETAILS</h2>
+
+<p>ENTER BANK ID</p>
+
+<input id="id">
+
+<p>ENTER BANK NAME</p>
+
+<input id="name">
+<p>ENTER BANK LOC</p>
+
+<input id="loc">
+<p>ENTER NO OF EMPLOYEES</p>
+
+<input id="no">
+<br/><br/>
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+let id,nm,loc,no;
+id=document.getElementById("id").value;
+nm=document.getElementById("name").value;
+loc=document.getElementById("loc").value;
+no=document.getElementById("no").value;
+
+
+document.getElementById("id").value=''
+document.getElementById("name").value=''
+document.getElementById("loc").value=''
+document.getElementById("no").value=''
+
+let ar=[id,nm,loc,no]
+alert('BANK DETAILS :'+ar)
+  
+}
+</script>
+
+</body>
+</html> 
